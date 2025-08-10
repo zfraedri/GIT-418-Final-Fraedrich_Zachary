@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--  META  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Zachary Fraedrich">
+  <meta name="description" content="MindQuest RPG - Level up Your Real Life">
+  <meta name="keywords" content="MindQuest, RPG, Tracker, Daily Goals, Motivation">
+  <meta name="robots" content="index, follow">
+  
+<!-- OPEN GRAPH/SOCIAL MEDIA META TAGS -->
+	<!-- For Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="MindQuest RPG">
+	<meta name="twitter:description" content="MindQuest RPG - Level up Your Real Life, Daily Task Tracker">
+	<meta name="twitter:image" content="https://www.public.asu.edu/~ccarra1/examples/SEO-meta/images/MAIN-COURSE.jpeg">
+  <meta name="twitter:creator" content="@MindQuestRPG">
+  <meta name="twitter:site" content="@MindQuestRPG">
+  
+	<!-- Open Graph -->	
+	<meta property="og:title" content="MindQuest RPG">
+	<meta property="og:description" content="MindQuest RPG - Level up Your Real Life, Daily Task Trackers">
+	<meta property="og:image" content="https://www.public.asu.edu/~ccarra1/examples/SEO-meta/images/MAIN-COURSE.jpeg">
+	<meta property="og:url" content="mindquest.com">
+	<meta property="og:type" content="website">
+
+<!-- LINKS -->
+  <title>MindQuest</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- JQUERY & UI  -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+<!-- SLICK CAROUSEL -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script defer src="script.js"></script>
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="196x196" href="favicon.png">
+  <link rel="canonical" href="https://www.mindquest.com">
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+</head>
+
+<body>
+  <div class="container">
+  <!-- HEADER -->
+  <header>
+    <h1>MindQuest</h1>
+    <p class="catchphrase">Level Up Your Real Life</p>
+  </header>
+
+  <!-- MAIN LAYOUT WRAPPER -->
+  <main class="main-grid">
+    <!-- TOP LEFT: Character Display -->
+    <section id="character-section">
+      <h2>Your Character</h2>
+      <div id="character-form-wrapper">
+        <form id="character-form">
+          <label>Name: <input type="text" id="char-name"></label><br>
+          <label>Eye Color: <input type="color" id="eye-color"></label><br>
+          <label>Hair Color: <input type="color" id="hair-color"></label><br>
+          <label>Hat Color: <input type="color" id="hat-color"></label><br>
+          <button type="submit">Save Character</button>
+        </form>
+      </div>
+      <div id="character-display" class="hidden">
+        <p id="display-name">Name: </p>
+        <div id="character-svg">
+          <img src="character-imgs/background.png" alt="Background Layer">
+          <div id="eye-layer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536.08 393.59" width="200" height="150" >
+              <path class="cls-1" 
+                d="M324.18,128.59c4.57,22.97,0,42.4-28.63,42.4s-33.19-19.43-28.63-42.4c4.57-22.96,12.82-42.4,28.63-42.4s24.06,19.44,28.63,42.4Z"
+                stroke="#231f20" stroke-miterlimit="10" stroke-width="2px" fill="var(--eye-color)"/>
+            </svg>
+          </div>
+          <div id="hair-layer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536.08 393.59" width="200" height="150" >
+              <path class="cls-1" 
+                d="M184.46,144.61s7.94,16.92,19.39,26.98c11.45,10.06,45.19,21.52,53.26,17.43,8.08-4.1,43.17-11.73,43.17-11.73l10.76,5.43,2.57-6.03,3.97,1.09c2.64.72,5.32,1.25,8.03,1.57l2.75.33c1.46.18,2.93.28,4.41.31l6.02.11h11.15s9.16,17.38,17.86,24.51c9.87,8.09,22.56,8.93,22.56,8.93,0,0-4.6,9.32-13.97,6.25-9.38-3.07-15.53-8.71-15.53-8.71h0c1.28,5.3,2.32,5.47,6.77,8.62,1.73,1.22,4.94,3.48,7.06,4.95,7.2,5.01,16.11,7.81,16.11,7.81,0,0-19.84,1.35-26.32-5.52-6.48-6.87-5.11-5.54-5.11-5.54l3,8.92c2.1,6.25,5.3,12.07,9.44,17.2h0c8.71,10.79,19.9,19.32,32.65,24.79,1.8.77,3.48,1.46,4.9,2,8.25,3.14,18.6,1.22,18.6,1.22,0,0-39.15,34.49-71.54,33.6-32.38-.89-62.43-7.63-62.43-7.63,0,0,11.48,10.82,17.33,11.85l5.85,1.03s-20.62,17.11-36.65-.06c-16.03-17.17-25.97-31.44-25.97-31.44,0,0,.95,3.51,1.63,14.49.68,10.93-17.34,18.77-17.34,18.77,0,0,7.03-25.53-4.49-43-7.78-11.8-22.12-29.26-30.61-39.36-7.08-8.42-13.36-17.5-18.52-27.22-4.9-9.23-9.49-20.03-9.55-28.17-.13-17.52,8.79-33.8,8.79-33.8ZM286.27,215.98c.81,9.57,17.77,12.01,29.55,11.02,11.77-.99,21.73-9.42,20.92-18.98-.81-9.57-11.28-7.29-23.06-6.3-11.77.99-28.22,4.7-27.41,14.26Z"
+                stroke="#231f20" stroke-miterlimit="10" stroke-width="2px" fill="var(--hair-color)"/>
+            </svg>
+          </div>
+          <div id="hat-layer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536.08 409.82" width="200" height="150" >
+              <path class="cls-1" 
+                d="M216.55,76.63s29.87,15.13,64.89,11.25c35.03-3.88,48.18-11.97,48.18-11.97,0,0,7.21-21.73.25-28.65-6.96-6.93-1.28-7.27-7.05-18.73-5.77-11.45-21.8-28.47-44.13-27.49s-37.53,3.92-46,13.13c-8.47,9.21-10.48,16.18-7.55,17.45,2.93,1.27,6.28,1.6,6.28,1.6,0,0-3.37-2.58-8.11,2.65s-6.35,12.37-4.67,13.09,4.6.87,4.6.87c0,0-2.93-1.27-8.31,4.24-5.37,5.51-4.64,19.93-4.64,19.93l6.25,2.63Z"
+                stroke="#231f20" stroke-miterlimit="10" stroke-width="2px" fill="var(--hat-color)"/>
+            </svg>
+          </div>
+          
+          <button id="reset-character">Reset Character </button>
+          </div> 
+        </div>
+    </section>
+
+    <!-- TOP RIGHT: Attribute Stats -->
+    <section id="stats-section">
+      <h2>Attributes</h2>
+      <ul>
+        <li>Intelligence: <span id="stat-intelligence">0</span></li>
+        <li>Strength: <span id="stat-strength">0</span></li>
+        <li>Dexterity: <span id="stat-dexterity">0</span></li>
+        <li>Level: <span id="level">1</span></li>
+        <li>Total XP: <span id="xp-total">0</span></li>
+      </ul>
+    </section>
+
+    <!-- BOTTOM: Quests Accordion -->
+    <section id="quests-section">
+      <h2>Daily Quests</h2>
+      <div id="accordion">
+        <h3>Mind</h3>
+          <div>
+            <label><input type="checkbox" class="quest" data-type="mind" id="read-for-20"> Read for 20 minutes</label><br>
+            <label><input type="checkbox" class="quest" data-type="mind" id="practice-mindfulness"> Practice mindfulness</label><br>
+            <label><input type="checkbox" class="quest" data-type="mind" id="journal"> Journal</label><br>
+            <label><input type="checkbox" class="quest" data-type="mind" id="learn-something"> Learn Something New!</label><br>
+            <label><input type="checkbox" class="quest" data-type="mind" id="deep-breathing"> Deep Breathing Exercise</label><br>
+            <label><input type="checkbox" class="quest" data-type="mind" id="brain-teaser"> Puzzle or Brain Teaser</label><br>
+            <label><input type="checkbox" class="quest" data-type="mind" id="screentime-limit"> Limit Screen Time Before Bed</label><br>
+          </div>
+
+        <h3>Body</h3>
+          <div>
+            <label><input type="checkbox" class="quest" data-type="body" id="go-walk"> Go for a walk</label><br>
+            <label><input type="checkbox" class="quest" data-type="body" id="push-up"> Do 15 push-ups</label><br>
+            <label><input type="checkbox" class="quest" data-type="body" id="drink-water"> Drink Glass of Water</label><br>
+            <label><input type="checkbox" class="quest" data-type="body" id="get-sleep"> Get 8 hours of Sleep</label><br>
+            <label><input type="checkbox" class="quest" data-type="body" id="do-stretches"> Stretch/Do Yoga</label><br>
+            <label><input type="checkbox" class="quest" data-type="body" id="healthy-eats"> Health Conscious Meal</label><br>
+            <label><input type="checkbox" class="quest" data-type="body" id="avoid-sugars"> Avoid Sugary Snacks Today</label><br>
+          </div>
+
+        <h3>Social</h3>
+          <div>
+            <label><input type="checkbox" class="quest" data-type="social" id="text-friend"> Text a friend</label><br>
+            <label><input type="checkbox" class="quest" data-type="social" id="help-someone"> Help someone out</label><br>
+            <label><input type="checkbox" class="quest" data-type="social" id="thank-you"> Write a Thank You Note</label><br>
+            <label><input type="checkbox" class="quest" data-type="social" id="active-listen"> Practice Active Listening</label><br>
+            <label><input type="checkbox" class="quest" data-type="social" id="memes-bro"> Share a funny article/meme/or video with a friend</label><br>
+            <label><input type="checkbox" class="quest" data-type="social" id="how-are-you"> Ask someone how their day is going</label><br>
+            <label><input type="checkbox" class="quest" data-type="social" id="compliment-others"> Give a Genuine Compliment</label><br>
+          </div>
+      </div>
+    </section>
+      
+    <!-- Quote Section -->
+    <section id="quote-section">
+      <blockquote id="quote-text">Loading quote...</blockquote>
+      <p id="quote-author"></p>
+      <button id="new-quote-btn">New Quote</button>
+    </section>
+
+    <!-- BOTTOM-BOTTOM: XP Progress Bar -->
+    <section id="xp-section">
+      <div id="xp-bar-container">
+        <div id="xp-bar-fill"></div>
+      </div>
+    </section>
+
+    <!-- XP Toast Message -->
+    <div id="xp-toast">+10 XP!</div>
+      
+    <!-- MODAL (hidden until level up) -->
+    <div id="level-up-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>🎉 Level Up!</h2>
+        <p>You've reached Level <span id="modal-level"></span>!</p>
+        <button id="close-modal">OK</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>MindQuestRPG &copy; 2025</p>
+
+    <div class="footer-carousel">
+      <div><img src="carousel-imgs/placeholder-1.jpeg" alt="Image 1"></div>
+      <div><img src="carousel-imgs/placeholder-2.jpeg" alt="Image 2"></div>
+      <div><img src="carousel-imgs/placeholder-3.jpeg" alt="Image 3"></div>
+    </div>
+
+  </footer>
+  </div>
+</body>
+</html>
